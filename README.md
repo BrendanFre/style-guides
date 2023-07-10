@@ -99,6 +99,7 @@ to signify self-closing:
 When adding an attribute to the tag, there should be one space between
 the element name and the attribute. Multiple attributes should also have
 one space between them:
+
 Good:
 ```
 <element attribute="">
@@ -111,6 +112,7 @@ Bad:
 ```
 There should never be a space between the attribute name, the equal sign
 and the open quotes:
+
 Good:
 ```
 <element attribute="value">
