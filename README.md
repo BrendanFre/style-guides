@@ -52,18 +52,31 @@ the websites we design accessible for all.
 For navigation bars, we prefer to use a vertical list rather than a 
 horizontal list. This can be accomplished with a drop-down.
 
+For sections of the web page that will change depending on device,
+add a comment to specify in what type of device the section will
+appear.
+```
+<div id="dropdown">Click Me!
+<!-- Visible by default: Desktop; Visible on click: Mobile -->
+	<a href="link1.html>Link1</a>
+	<a href="link2.html>Link2</a>
+</div>
+<!-- End of dynamic viewpoint -->
+```
+
 ## Declare Document Type
 
 **Always** declare the document type as per below.
-
-`<!DOCTYPE html>`
+```
+<!DOCTYPE html>
+```
 
 ## Declare the spoken language
 
 **Always** declare the language of the text in the html tag:
-
-`<html lang ="en">`
-
+```
+<html lang ="en">`
+```
 ## Lower-case Element
 
 **Always** use lower-case for elements, the only exception is the 
