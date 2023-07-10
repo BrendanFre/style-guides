@@ -104,6 +104,7 @@ and the open quotes:
 <!-- Bad -->
 <element attribute= "value">
 <element attribute1 ="value1" attribute2 = "value2">
+```
 
 ## HTML Semantics
 
