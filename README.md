@@ -5,9 +5,9 @@ Updated by: Brendan Freeman
 
 ===================[TABLE OF CONTENTS]==================================
 
-[HTML](#HTML)
-[CSS3](#CSS3)
-[JavaScript](#JavaScript)
+1. [HTML](#HTML)
+2. [CSS3](#CSS3)
+3. [JavaScript](#JavaScript)
 
 # HTML
 
@@ -33,10 +33,10 @@ directories.
 │   ├── page-1.html
 │ 
 ├── scripts
-│   ├── script.js
+│   ├── scripts.js
 │
 ├── styles
-│   ├── style.css
+│   ├── styles.css
 │
 └── .gitignore
 ```
@@ -50,7 +50,127 @@ need to be descriptive and lower-case.
 access the internet. By focusing on mobile first approach we can make 
 the websites we design accessible for all. 
 For navigation bars, we prefer to use a vertical list rather than a 
-horizontal list. This can be accomplished with a drop-down. 
+horizontal list. This can be accomplished with a drop-down.
+
+## Declare Document Type
+
+**Always** declare the document type as per below.
+
+`<!DOCTYPE html>`
+
+## Declare the spoken language
+
+**Always** declare the language of the text in the html tag:
+
+`<html lang ="en">`
+
+## Lower-case Element
+
+**Always** use lower-case for elements, the only exception is the 
+`<!DOCTYPE html>` and the value of attributes where the text must be
+upper-case such as JavaScript functions.
+
+## HTML Element Structure
+
+When creating an element, make sure to close to close the element with 
+a closing element:
+```
+<p>......</p>
+```
+For self-closing elements, before the end of the ">" use a forward slash
+to signify self-closing:
+```
+<img />
+```
+When adding an attribute to the tag, there should be one space between
+the element name and the attribute. Multiple attributes should also have
+one space between them:
+```
+<!-- Good -->
+<element attribute="">
+<element attribute="" attribute="">
+
+<!== Bad -->
+<elementattribute="">
+<element  attribute=""attribute="">
+```
+There should never be a space between the attribute name, the equal sign
+and the open quotes:
+```
+<!-- Good -->
+<element attribute="value">
+<element attribute1="value1" attribute2="value2">
+
+<!-- Bad -->
+<element attribute= "value">
+<element attribute1 ="value1" attribute2 = "value2">
+
+## HTML Semantics
+
+Where possible use HTML semantics to define specific areas of the html
+page. This is helpful for developers to clearly see where different
+parts of the web page are located. It also has the added benefit for
+assisting screen readers. Example of semantic tags:
+```
+<header>
+<footer>
+<nav>
+<main>
+```
+
+## Div and Span
+
+**Always** use the `<div>` tag when you need a section to take up a block
+of a page. Always use `<span>` tags when you need a section to be
+in-line. The only exception is when the requirements change between
+desktop and mobile. In this case use a `<div>` tag and override
+it's display property in the css file.
+
+## Class Attribute
+
+When assigning classes to an element, the element should only have one
+class, unless frameworks and other external styles are used. Such as 
+Bootstrap.
+
+## ID Attribute
+
+ID attribute should never be used for styling purposes. id attributes 
+should be used to bookmark specific sections of the web page. This 
+should be used for landing pages.
+```
+<!-- The link to the bookmark. -->
+<a href="#reallycoolpart">Really cool link</a> 
+
+<!-- Bookmarked section -->
+<h2 id="reallycoolpart">Really Cool Part</h2>
+```
+Another use for id attribute is when targeting specific elements using
+JavaScript such as a drop-down menu:
+HTML file:
+```
+<span id="dropdown>I'm a dropdown</span>
+```
+JavaScript File:
+```
+...
+getElementById("dropdown").style.display = "block";
+...
+```
+
+
+## Linking CSS and JavaScript Files
+
+
+CSS files should **always** be linked within the `<head>` element:
+```
+<head>
+<link rel="stylesheet" href="/styles/styles.css">
+</head>
+```
+
+JavaScript files should **always** be linked at the very end of the 
+`<body>` element. This is to reduce initial load times, especially with 
+bigger web pages with many images.
 
 # CSS3
 
