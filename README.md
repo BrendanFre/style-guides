@@ -1,4 +1,5 @@
 # Style Guides
+
 Style guides for various programming and mark-up languages that I use.
 Last Updated: 10/07/2023
 Updated by: Brendan Freeman
@@ -75,7 +76,7 @@ appear.
 
 **Always** declare the language of the text in the html tag:
 ```
-<html lang ="en">`
+<html lang="en">`
 ```
 ## Lower-case Element
 
@@ -98,23 +99,25 @@ to signify self-closing:
 When adding an attribute to the tag, there should be one space between
 the element name and the attribute. Multiple attributes should also have
 one space between them:
+Good:
 ```
-<!-- Good -->
 <element attribute="">
 <element attribute="" attribute="">
-
-<!== Bad -->
+```
+Bad:
+```
 <elementattribute="">
 <element  attribute=""attribute="">
 ```
 There should never be a space between the attribute name, the equal sign
 and the open quotes:
+Good:
 ```
-<!-- Good -->
 <element attribute="value">
 <element attribute1="value1" attribute2="value2">
-
-<!-- Bad -->
+```
+Bad:
+```
 <element attribute= "value">
 <element attribute1 ="value1" attribute2 = "value2">
 ```
@@ -171,11 +174,10 @@ getElementById("dropdown").style.display = "block";
 ...
 ```
 
-
 ## Linking CSS and JavaScript Files
 
-
 CSS files should **always** be linked within the `<head>` element:
+
 ```
 <head>
 <link rel="stylesheet" href="/styles/styles.css">
