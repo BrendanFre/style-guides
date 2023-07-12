@@ -1,23 +1,27 @@
 ***
 Project Name: Style Guides
-Current Version: 0.2.1
+
+Current Version: 0.2.2
+
 Description: (Style guides for various programming and mark-up languages
 that I use.
-Creator: Brendan Freeman
-Creation Date: 10 July 2023
-Last Update By: Brendan Freeman
-Last Updated Date: 12 July 2023
-***
 
-Last Updated: 12/07/2023
-Updated by: Brendan Freeman
+Creator: Brendan Freeman
+
+Creation Date: 10 July 2023
+
+Last Update By: Brendan Freeman
+
+Last Updated Date: 12 July 2023
+
+***
 
 ===================[TABLE OF CONTENTS]==================================
 
 1. [HTML](#HTML)
 2. [CSS3](#CSS3)
 3. [JavaScript](#JavaScript)
-4. [Markdown- README.md](#Markdown)
+4. [Markdown - README.md](#Markdown)
 
 # HTML
 
@@ -240,12 +244,20 @@ format should be dd mmm yyyy (example 12 July 2023).
 ```
 ***
 Project Name: (Project name)
+
 Current Version: (Version number based on this link 
+
 https://semver.org/#:~:text=A%20normal%20version%20number%20MUST,0%20%2D%3E%201.11.0.
+
 Description: (Short description of [project, maximum 2 lines)
+
 Creator: (Initial creator name)
+
 Creation Date: (Creation date)
+
 Last Update By: (Last updater)
+
 Last Updated Date: (Date it was last updated)
+
 ***
 ```
