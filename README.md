@@ -1,6 +1,14 @@
-# Style Guides
+========================================================================
+Project Name: Style Guides
+Current Version: 0.2.0
+Description: (Style guides for various programming and mark-up languages
+that I use.
+Creator: Brendan Freeman
+Creation Date: 10 July 2023
+Last Update By: Brendan Freeman
+Last Updated Date: 12 July 2023
+========================================================================
 
-Style guides for various programming and mark-up languages that I use.
 Last Updated: 12/07/2023
 Updated by: Brendan Freeman
 
@@ -9,6 +17,7 @@ Updated by: Brendan Freeman
 1. [HTML](#HTML)
 2. [CSS3](#CSS3)
 3. [JavaScript](#JavaScript)
+4. [Markdown- README.md](#Markdown)
 
 # HTML
 
@@ -211,3 +220,32 @@ Here is the boilerplate for most types of webpages:
 # CSS3
 
 # JavaScript
+
+# Markdown
+
+Specifically readme files in repositories.
+
+## Line Character Length
+
+Markdown files should contain a maximum line character length of 72.
+This makes the file easily readable on most devices. Only exception is
+link addresses. 
+
+## Header Section
+
+All ReadMe markdown files should have a header section. This includes
+information on what the readme file for. The creator, last updated by,
+and dates. Such as Creation date and last update by date. The date
+format should be dd mmm yyyy (example 12 July 2023).
+```
+========================================================================
+Project Name: (Project name)
+Current Version: (Version number based on this link 
+https://semver.org/#:~:text=A%20normal%20version%20number%20MUST,0%20%2D%3E%201.11.0.
+Description: (Short description of [project, maximum 2 lines)
+Creator: (Initial creator name)
+Creation Date: (Creation date)
+Last Update By: (Last updater)
+Last Updated Date: (Date it was last updated)
+========================================================================
+```
