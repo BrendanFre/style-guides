@@ -1,7 +1,7 @@
 # Style Guides
 
 Style guides for various programming and mark-up languages that I use.
-Last Updated: 10/07/2023
+Last Updated: 12/07/2023
 Updated by: Brendan Freeman
 
 ===================[TABLE OF CONTENTS]==================================
@@ -189,6 +189,24 @@ CSS files should **always** be linked within the `<head>` element:
 JavaScript files should **always** be linked at the very end of the 
 `<body>` element. This is to reduce initial load times, especially with 
 bigger web pages with many images.
+
+## HTML Skeleton
+
+Here is the boilerplate for most types of webpages:
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document Name</title>
+<link rel="stylesheet" href="/styles/styles.css" />
+</head>
+<body>
+	<header></header>
+	<nav</nav>
+	<main></main>
+</body>
+</html>
+```
 
 # CSS3
 
